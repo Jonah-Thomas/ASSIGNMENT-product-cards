@@ -1,0 +1,17 @@
+
+
+/*Contains the Css properties that affect positioning and styling within each Section Class*/
+.Section.Section1 {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  margin: 30px;
+  width: 1000px;
+}
+.Section.Section2 {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  margin: 30px;
+  width: 1000px;
+}
