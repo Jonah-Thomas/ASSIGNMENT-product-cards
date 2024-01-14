@@ -1,17 +1,159 @@
+/* MY Media Querie attempt */
+
+/* .section{
+  width: 100%;
+  margin: auto;
+}
+
+You can use @media to perform a Media Query. I choose to focus on making the website responsive by giving widths based off of Phones to Laptops.
+Here I choose min-width which allows for the website to become responsive according to being used on a mobile device first. max-width is great to have a website behave in the opposite way.
+@media (min-width: 475px) {
+  .section{
+    max-width: 475px;
+  }
+}
+
+@media (min-width: 640px) {
+  .section{
+    max-width: 640px;
+  }
+}
 
 
-/*Contains the Css properties that affect positioning and styling within each Section Class*/
+@media (min-width: 768px) {
+  .section{
+    max-width: 768px;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .section{
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .section{
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .section{
+    max-width: 1536px;
+  }
+}
+*/
+
+/*Contains the Css properties that affect positioning and styling within each Section Class (This was orginally done in Branch 2)*/
 .Section.Section1 {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 10px;
-  margin: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   width: 1000px;
+  font-family: 'Nanum Myeongjo', serif;
 }
+
 .Section.Section2 {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 10px;
-  margin: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   width: 1000px;
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+.card-title {
+  text-align: center;
+  border: 1px solid lightblue;
+  border-radius: 1px;
+}
+
+.card-title2{
+  text-align: center;
+}
+.Product-Availability {
+background-color: gray;
+font-weight: bold;
+color: yellow;
+}
+
+/* I had an issue here regarding using *padding 0* as it seems that bootstrap holds more weight than it. !important allows me to force this property to take priority when affecting the class element I have declared. This was pretty much my last resort as no matter what use of padding I tried, It simply wouldn't work.*/
+.card-body {
+  padding: 0 !important;
+}
+
+.card-text {
+  font-size: smaller;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card-text0 {
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+.specs{
+  color: yellow;
+}
+
+.footer {
+  font-size: small;
+  font-family: 'Nanum Myeongjo', serif;
+}
+.img {
+  position: relative;
+  margin: auto;
+}
+
+.soldout {
+  position: absolute;
+  width: 50%;
+  left: 25%;
+  bottom: 25%;
+  top: 10%;
+}
+
+
+
+
+
+/**/.card1 {
+  
+  box-shadow: 0 8px 32px 0 lightblue;
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 1px;
+  border: 1px solid lightblue
+}
+/**/.card2 {
+  
+  box-shadow: 0 8px 32px 0 lightblue;
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 1px;
+  border: 1px solid lightblue
+}
+
+/**/.card3 {
+  
+  box-shadow: 0 8px 32px 0 lightblue;
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 1px;
+  border: 1px solid lightblue
+}
+
+/**/.card4 {
+  
+  box-shadow: 0 8px 32px 0 lightblue;
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 1px;
+  border: 1px solid lightblue
 }
